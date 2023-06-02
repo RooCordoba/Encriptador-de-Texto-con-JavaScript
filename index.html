@@ -15,31 +15,32 @@
     <h1>Encriptador/ Desencriptador de mensajes de texto en JavaScript</h1>
     <div class="contenedor-principal">
         <div class="contenedor">
-            <textarea name="encriptador" cols="30" rows="10" class="mi-Textarea"
+            <textarea name="encriptador" cols="30" rows="10" class="mi-Textarea" id="mensaje_input"
             placeholder="Ingrese mensaje a encriptar o desencriptar"></textarea>
             <div class="botones">
-                <button type="submit">Encriptar</button>
-                <button type="submit">Desencriptar</button>
+                <button type="submit" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="submit" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         <div class="contenedor contenedor-derecha">
             <div class="mi-Textarea mensaje">
-                <p>
+                <p id="mensaje_output">
                     Mensaje no encontrado.
-                </p>
-                <p>
+                    <br>
                     Ingrese un mensaje que quiera encriptar o desencriptar
                 </p>
             </div>
             <div class="botones boton-derecha">
-                <button type="submit">Copiar</button>
+                <button type="submit" id="copiar" onclick="copiar_texto()">Copiar</button>
             </div>
         </div>
     </div>
+    <p class="instruccion"> ✪ Solo letras minusculas y sin acento</p>
     <footer>
         <p>Proyecto realizado para el challenge de Oracle Alura por Rocio Cordoba - 2023 </p>
         <p>LinkedIn: <a href="http://www.linkedin.com/in/rocio-cordoba/" target="_blank"> in/rocio-cordoba</a></p>
         <p>Github: <a href="https://github.com/RooCordoba" target="_blank"> /RooCordoba</a></p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -54,13 +54,11 @@ h1{
 
 .mensaje{
     display: flex;
-    flex-direction: column;
     overflow: auto;
     max-width: 400px;
-    justify-content: center;
     text-align: center;
-    align-items: center;
 }
+
 
 .contenedor-derecha{
     min-width: 410px;
@@ -98,11 +96,17 @@ button:active{
     padding: 13px;
 }
 
+.instruccion{
+    width: fit-content;
+    margin-left: 30px; 
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
 footer {
     background-color: rgb(23, 3, 36);
-    padding: 15px 0;
-    position: absolute;
-    bottom: 0;
+    padding: 5px 0;
+    position: static;
     width: 100%;
     color: white;
 }
