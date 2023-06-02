@@ -1,0 +1,172 @@
+body{
+    background-image: url(images/background.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    background-color: #564592;
+    font-family: 'Vollkorn', serif;
+    color: aliceblue;
+    text-shadow: 4px 4px 3px #000000ea;
+    box-shadow: 10px 10px 2px #2c2053;
+    border-radius: 24px 2px 24px 2px;
+    width: 600px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor{
+    background: rgba(114, 76, 249, 0.5);
+    width: 60%;
+    display: inline-block;
+    border-radius: 3%;
+    max-width: 60%;
+    min-width: 520px;
+    padding: 20px 0;
+    margin: 10px 5px 10px 10px;
+}
+
+.mi-Textarea{
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    max-height: 400px;
+    max-width: 500px;
+    min-height: 400px;
+    min-width: 400px;
+    background-color: rgba(255, 247, 252, 0.397);
+    color: white;
+    font-size: 20px;
+    border-radius: 3%;
+    border: none;
+}
+
+.mensaje{
+    display: flex;
+    overflow: auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.contenedor-derecha{
+    min-width: 410px;
+    max-width: 450px;
+}
+
+.botones{
+    width: fit-content;
+    margin: auto;
+}
+
+button{
+    display: inline-block;
+    padding: 15px;
+    margin: 5px 15px 5px 15px;
+    background: #3b2d6b;
+    border-radius: 24px;
+    width: 130px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+button:hover{
+    color: #EDF67D;
+}
+
+button:active{
+    font-size: 18px;
+    padding: 13px;
+}
+
+.instruccion{
+    width: fit-content;
+    margin-left: 30px; 
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+footer {
+    background-color: rgb(23, 3, 36);
+    padding: 5px 0;
+    position: static;
+    width: 100%;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p a{
+    color: #EDF67D;
+    text-decoration: none;
+}
+
+footer p a:active{
+    color: #3b2d6b;
+}
+
+@media screen and (max-width:950px) {
+    .contenedor-principal{
+        display: block;
+    }
+    .contenedor{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        max-width: 95%;
+        width: 95%;
+    }
+    .contenedor-derecha{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .mi-Textarea{
+        max-width: 85%;
+        width: 85%;
+    }
+
+    footer{
+        position: relative;
+    }
+}
+
+@media screen and (max-width:650px) {
+    h1{
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-height: 600px){
+    footer{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:540px){
+    body{
+        display: inline-block;
+    }
+}
